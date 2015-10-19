@@ -1,0 +1,3 @@
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.csprojResolveAssemblyReference.cache
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.Properties.Resources.resources
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.csproj.GenerateResource.Cache

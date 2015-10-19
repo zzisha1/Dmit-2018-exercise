@@ -28,14 +28,17 @@ namespace WSSystem.DAL.Entities
         public string City { get; set; }
 
         [Required]
-        [StringLength(2, ErrorMessage="Province must be 2 characters")]
+        [StringLength(2, ErrorMessage="Province must be 2 characters long")]
         public string Province { get; set; }
 
         [StringLength(50)]
         public string Contact { get; set; }
 
+        [Required]
         [StringLength (12)]
         public string Phone { get; set; }
         public bool Active { get; set; }
+
+        public virtual ICollection<PlacementContract> PlacementContracts { get; set; }
     }
 }
