@@ -17,7 +17,7 @@ namespace WSSystem.DAL.Entities
         [Key]
         public int LocationID { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "A Name is required maximum 50 characters)")]
         [StringLength(50)]
         public string Name { get; set; }
         [Required]
@@ -36,6 +36,8 @@ namespace WSSystem.DAL.Entities
 
         [Required]
         [StringLength (12)]
+        [RegularExpression(@"^[1-9][0-9][0-9]\.[0-9]\d{3}\.[0-9]\d{4}")]
+
         public string Phone { get; set; }
         public bool Active { get; set; }
 
