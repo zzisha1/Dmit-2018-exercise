@@ -15,19 +15,18 @@ namespace WSSystem.DAL.Entities
     {
         [Key]
         public int EmployeeSkillID { get; set; }
-
-        [Key, Column(Order=1)]
+        [Required(ErrorMessage = "Please enter employee id")]
         public int EmployeeID { get; set; }
-        [Key, Column(Order=2)]
+         [Required(ErrorMessage="Please enter skill id")]
         public int SkillID { get; set; }
 
-        [Required]
+        [Required(ErrorMessage="Please enter level of employee skills")]
         public int Level { get; set; }
         public int? YearsOfExperience { get; set;}
 
 
-        public virtual Employee employee { get; set; }
-        public virtual Skill skill { get; set; }
+        public virtual Employee Employee { get; set; }
+        public virtual Skill Skill { get; set; }
 
     }
 }

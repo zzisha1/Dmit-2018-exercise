@@ -14,10 +14,10 @@ namespace WSSystem.DAL.Entities
     {
         [Key]
         public int SkillID { get; set; }
-        [Required]
+        [Required(ErrorMessage="Please enter description of skills")]
         [StringLength(100)]
         public string Description { get; set; }
-        [Required]
+        
         public bool RequiredTicket { get; set; }
 
         public virtual ICollection<EmployeeSkill>EmployeeSkills { get; set; }

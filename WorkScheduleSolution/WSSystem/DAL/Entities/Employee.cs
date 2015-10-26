@@ -15,23 +15,27 @@ namespace WSSystem.DAL.Entities
         [Key]
         public int EmployeeID { get; set; }
 
-        [Required]
+        [Required(ErrorMessage="Please Enter First Name")]
         [StringLength(50)]
         public string FirstName { get; set; }
 
-        [Required]
+         [Required(ErrorMessage = "Please Enter Last Name")]
         [StringLength(50)]
         public string LastName { get; set; }
 
-        [Required]
-        [StringLength(12)]
+        [Required(ErrorMessage = "Please Enter Phone Number")]
+     
+        [RegularExpression(@"^[1-9][0-9][0-9]\.[0-9]\d{3}\.[0-9]\d{4}")]
         public string HomePhone { get; set; }
-        [Required]
+      
         public bool Active { get; set; }
 
         public virtual ICollection<EmployeeSkill> EmployeeSkills { get; set; }
         public virtual ICollection<Schedule> Schedules { get; set; }
 
-
+        public Employee()
+        {
+            Active = true;
+        }
     }
 }

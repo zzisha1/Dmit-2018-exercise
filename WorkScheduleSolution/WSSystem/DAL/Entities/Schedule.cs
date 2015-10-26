@@ -17,13 +17,13 @@ namespace WSSystem.DAL.Entities
         public int ScheduleID { get; set; }
 
         public DateTime Day { get; set; }
-        [Key, Column(Order = 1)]
+     
         public int ShiftID { get; set; }
 
-        [Key, Column(Order = 2)]
+     
         public int EmployeeID { get; set; }
 
-        public virtual Shift shift { get; set; }
-        public virtual Employee employee { get; set; }
+        public virtual Shift Shifts { get; set; }
+        public virtual Employee Employees { get; set; }
     }
 }

@@ -15,11 +15,11 @@ namespace WSSystem.DAL.Entities
     {
         [Key]
         public int PlacementContractID { get; set; }
-        [Required]
+        [Required(ErrorMessage="Please enter start date")]
         public DateTime StartDate { get; set; }
-        [Required]
+        [Required(ErrorMessage="Please enter End date")]
         public DateTime EndDate { get; set; }
-        [Key,Column(Order=1)]
+       
         public int LocationID { get; set; }
 
         public virtual Location Locations { get; set; }

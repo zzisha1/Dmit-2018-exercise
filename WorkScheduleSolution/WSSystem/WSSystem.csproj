@@ -59,7 +59,6 @@
     <Compile Include="DAL\Entities\EmployeeSkill.cs" />
     <Compile Include="DAL\Entities\Location.cs" />
     <Compile Include="DAL\Entities\PlacementContract.cs" />
-    <Compile Include="DAL\Entities\RegularExpressionValidator.cs" />
     <Compile Include="DAL\Entities\Schedule.cs" />
     <Compile Include="DAL\Entities\Shift.cs" />
     <Compile Include="DAL\Entities\Skill.cs" />

@@ -26,7 +26,12 @@ namespace WSSystem.DAL.Entities
         public string Notes { get; set; }
 
         public virtual PlacementContract PlacementContracts { get; set; }
-        public virtual ICollection<Schedule> Schedules { get; set; }
+        public virtual ICollection<Schedule>Schedules { get; set; }
+
+        public Shift()
+        {
+            Active = true;
+        }
 
     }
 }
