@@ -11,7 +11,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WSSystem.DAL.Entities
 {
-    class Schedule
+    public class Schedule
     {
         [Key]
         public int ScheduleID { get; set; }
