@@ -1,12 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WSWebsite", "http://localhost:49868", "{83E020CB-82A3-4F6A-9F9E-6311DA5509CE}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{bb474ec3-43b0-422f-a082-b73b79fe5068}|WSSystem.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_49868"
 		Debug.AspNetCompiler.PhysicalPath = "WSWebsite\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49868\"
@@ -25,7 +24,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WSWebsite", "http://localho
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSSystem", "WSSystem\WSSystem.csproj", "{F98373C8-81D2-4B5C-9CF5-5BA694500925}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSSystem", "WSSystem\WSSystem.csproj", "{BB474EC3-43B0-422F-A082-B73B79FE5068}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +36,10 @@ Global
 		{83E020CB-82A3-4F6A-9F9E-6311DA5509CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83E020CB-82A3-4F6A-9F9E-6311DA5509CE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{83E020CB-82A3-4F6A-9F9E-6311DA5509CE}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{F98373C8-81D2-4B5C-9CF5-5BA694500925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F98373C8-81D2-4B5C-9CF5-5BA694500925}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F98373C8-81D2-4B5C-9CF5-5BA694500925}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F98373C8-81D2-4B5C-9CF5-5BA694500925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB474EC3-43B0-422F-A082-B73B79FE5068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB474EC3-43B0-422F-A082-B73B79FE5068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB474EC3-43B0-422F-A082-B73B79FE5068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB474EC3-43B0-422F-A082-B73B79FE5068}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
