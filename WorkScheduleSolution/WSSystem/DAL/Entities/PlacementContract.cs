@@ -19,7 +19,7 @@ namespace WSSystem.DAL.Entities
         public DateTime StartDate { get; set; }
         [Required(ErrorMessage="Please enter End date")]
         public DateTime EndDate { get; set; }
-       
+        [Required(ErrorMessage="Please enter Location id")]
         public int LocationID { get; set; }
 
         public virtual Location Locations { get; set; }

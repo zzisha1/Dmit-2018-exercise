@@ -16,11 +16,13 @@ namespace WSSystem.DAL.Entities
         [Key]
         public int ScheduleID { get; set; }
 
+        [Required(ErrorMessage="Please enter the day of employeed schedule")]
         public DateTime Day { get; set; }
      
+        [Required(ErrorMessage="Employee must be scheduled based on their shift")]
         public int ShiftID { get; set; }
 
-     
+        [Required(ErrorMessage = "Employee must be scheduled based on their ID")]
         public int EmployeeID { get; set; }
 
         public virtual Shift Shifts { get; set; }

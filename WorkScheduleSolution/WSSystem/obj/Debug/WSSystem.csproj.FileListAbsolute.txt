@@ -1,6 +1,14 @@
-C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.csprojResolveAssemblyReference.cache
 C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.Properties.Resources.resources
 C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.csproj.GenerateResource.Cache
 C:\Users\zzisha1\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.csprojResolveAssemblyReference.cache
 C:\Users\zzisha1\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.Properties.Resources.resources
 C:\Users\zzisha1\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.csproj.GenerateResource.Cache
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\WSSystem.exe.config
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\WSSystem.exe
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\WSSystem.pdb
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\EntityFramework.dll
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\EntityFramework.xml
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.exe
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.pdb

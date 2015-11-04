@@ -15,16 +15,13 @@ namespace WSSystem.DAL.Entities
         [Key]
         public int EmployeeID { get; set; }
 
-        [Required(ErrorMessage="Please Enter First Name")]
-        [StringLength(50)]
+        [Required(AllowEmptyStrings = false), StringLength(50)]
         public string FirstName { get; set; }
 
-         [Required(ErrorMessage = "Please Enter Last Name")]
-        [StringLength(50)]
+        [Required(AllowEmptyStrings = false), StringLength(50)]
         public string LastName { get; set; }
 
         [Required(ErrorMessage = "Please Enter Phone Number")]
-     
         [RegularExpression(@"^[1-9][0-9][0-9]\.[0-9]\d{3}\.[0-9]\d{4}")]
         public string HomePhone { get; set; }
       

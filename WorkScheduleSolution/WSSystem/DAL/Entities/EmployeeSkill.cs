@@ -17,7 +17,7 @@ namespace WSSystem.DAL.Entities
         public int EmployeeSkillID { get; set; }
         [Required(ErrorMessage = "Please enter employee id")]
         public int EmployeeID { get; set; }
-         [Required(ErrorMessage="Please enter skill id")]
+        [Required(ErrorMessage="Please enter skill id")]
         public int SkillID { get; set; }
 
         [Required(ErrorMessage="Please enter level of employee skills")]
