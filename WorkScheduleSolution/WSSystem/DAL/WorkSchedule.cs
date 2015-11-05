@@ -13,7 +13,7 @@ namespace WSSystem.DAL
 {
     internal class WorkSchedule : DbContext
     {
-        public WorkSchedule(): base("name = WSdb")
+        public WorkSchedule(): base("name=WSdb")
         {
 
         }

@@ -1,1 +1,9 @@
-C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.csprojResolveAssemblyReference.cache
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\WSSystem.dll.config
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\WSSystem.dll
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\WSSystem.pdb
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\EntityFramework.dll
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\EntityFramework.xml
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.dll
+C:\Users\Zerin\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.pdb

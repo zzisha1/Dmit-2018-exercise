@@ -22,20 +22,19 @@ namespace WSSystem.DAL.Entities
 
         [Required(AllowEmptyStrings = false), StringLength(50)]
         public string Street { get; set; }
-        [Required(AllowEmptyStrings = false), StringLength(50)]
+        [Required(AllowEmptyStrings = false), StringLength(30)]
         public string City { get; set; }
 
         [Required(ErrorMessage="Please enter Province")]
         [StringLength(2, ErrorMessage="Province must be 2 characters long")]
         public string Province { get; set; }
 
-        [Required(AllowEmptyStrings= false), StringLength(50)]
+        [StringLength(50, ErrorMessage="Contact must be within 50 characters")]
         public string Contact { get; set; }
 
         [Required(ErrorMessage="Please enter phone number")]
-      
-    
-        [RegularExpression(@"^[1-9][0-9][0-9]\.[0-9]\d{3}\.[0-9]\d{4}")]
+   
+        [RegularExpression(@"^[1-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9][0-9]")]
 
         public string Phone { get; set; }
         public bool Active { get; set; }
