@@ -21,7 +21,7 @@ namespace WSSystem.DAL.Entities
         [Required(AllowEmptyStrings = false), StringLength(50)]
         public string LastName { get; set; }
 
-        [Required(ErrorMessage = "Please Enter Phone Number")]
+        [Required(ErrorMessage = "Phone Number is required")]
         [RegularExpression(@"^[1-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9][0-9]")]
 
         public string HomePhone { get; set; }

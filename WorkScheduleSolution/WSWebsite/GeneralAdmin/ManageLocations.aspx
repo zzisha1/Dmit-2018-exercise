@@ -4,13 +4,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <h1>Manage Locations</h1>
     <uc1:MessageUserControl ID="MessageUserControl" runat="server" />
-    <asp:ListView ID="LocationListView" runat="server" DataSourceID="LocationODS" InsertItemPosition="LastItem">
+    <asp:ListView ID="LocationListView" runat="server" DataSourceID="LocationODS" InsertItemPosition="LastItem" DataKeyNames="LocationID">
         <AlternatingItemTemplate>
-            <tr style="background-color:#FFF8DC;">
+            <tr style="background-color:#FAFAD2; color: #284775;">
                 <td>
                     <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
                 </td>
                
+                
                 <td>
                     <asp:Label ID="NameLabel" runat="server" Text='<%# Eval("Name") %>' />
                 </td>
@@ -29,18 +30,21 @@
                 <td>
                     <asp:Label ID="PhoneLabel" runat="server" Text='<%# Eval("Phone") %>' />
                 </td>
+               
                 <td>
                     <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Eval("Active") %>' Enabled="false" />
                 </td>
+                
                
             </tr>
         </AlternatingItemTemplate>
         <EditItemTemplate>
-            <tr style="background-color:#008A8C;color: #FFFFFF;">
+            <tr style="background-color:#FFCC66; color: #000080;">
                 <td>
                     <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" />
                     <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
                 </td>
+               
                
                 <td>
                     <asp:TextBox ID="NameTextBox" runat="server" Text='<%# Bind("Name") %>' />
@@ -60,9 +64,11 @@
                 <td>
                     <asp:TextBox ID="PhoneTextBox" runat="server" Text='<%# Bind("Phone") %>' />
                 </td>
+                
                 <td>
                     <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Bind("Active") %>' />
                 </td>
+                
                 
             </tr>
         </EditItemTemplate>
@@ -80,6 +86,7 @@
                     <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Clear" />
                 </td>
                 
+                
                 <td>
                     <asp:TextBox ID="NameTextBox" runat="server" Text='<%# Bind("Name") %>' />
                 </td>
@@ -98,17 +105,20 @@
                 <td>
                     <asp:TextBox ID="PhoneTextBox" runat="server" Text='<%# Bind("Phone") %>' />
                 </td>
+                
                 <td>
                     <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Bind("Active") %>' />
                 </td>
+               
                 
             </tr>
         </InsertItemTemplate>
         <ItemTemplate>
-            <tr style="background-color:#DCDCDC;color: #000000;">
+            <tr style="background-color:#FFFBD6; color: #333333;">
                 <td>
                     <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
                 </td>
+               
                
                 <td>
                     <asp:Label ID="NameLabel" runat="server" Text='<%# Eval("Name") %>' />
@@ -128,9 +138,11 @@
                 <td>
                     <asp:Label ID="PhoneLabel" runat="server" Text='<%# Eval("Phone") %>' />
                 </td>
+                
                 <td>
                     <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Eval("Active") %>' Enabled="false" />
                 </td>
+               
                 
             </tr>
         </ItemTemplate>
@@ -139,8 +151,9 @@
                 <tr runat="server">
                     <td runat="server">
                         <table id="itemPlaceholderContainer" runat="server" border="1" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
-                            <tr runat="server" style="background-color:#DCDCDC;color: #000000;">
+                            <tr runat="server" style="background-color:#FFFBD6; color: #333333;">
                                 <th runat="server"></th>
+                               
                                
                                 <th runat="server">Name</th>
                                 <th runat="server">Street</th>
@@ -148,6 +161,7 @@
                                 <th runat="server">Province</th>
                                 <th runat="server">Contact</th>
                                 <th runat="server">Phone</th>
+                                
                                 <th runat="server">Active</th>
                                 
                             </tr>
@@ -157,17 +171,23 @@
                     </td>
                 </tr>
                 <tr runat="server">
-                    <td runat="server" style="text-align: center;background-color: #CCCCCC;font-family: Verdana, Arial, Helvetica, sans-serif;color: #000000;">
+                    <td runat="server" style="text-align: center;background-color: #FFCC66; font-family: Verdana, Arial, Helvetica, sans-serif;color: #333333;">
+                        <asp:DataPager ID="DataPager1" runat="server">
+                            <Fields>
+                                <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True" />
+                            </Fields>
+                        </asp:DataPager>
                     </td>
                 </tr>
             </table>
         </LayoutTemplate>
         <SelectedItemTemplate>
-            <tr style="background-color:#008A8C;font-weight: bold;color: #FFFFFF;">
+            <tr style="background-color:#FFCC66; font-weight: bold;color: #000080;">
                 <td>
                     <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
                 </td>
                 
+               
                 <td>
                     <asp:Label ID="NameLabel" runat="server" Text='<%# Eval("Name") %>' />
                 </td>
@@ -186,9 +206,11 @@
                 <td>
                     <asp:Label ID="PhoneLabel" runat="server" Text='<%# Eval("Phone") %>' />
                 </td>
+                
                 <td>
                     <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Eval("Active") %>' Enabled="false" />
                 </td>
+              
                 
             </tr>
         </SelectedItemTemplate>
