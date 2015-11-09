@@ -12,7 +12,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace WSSystem.DAL.Entities
 {
     public class EmployeeSkill
-    {
+    {   
+        public enum SkillLevel
+        {
+             Novice,
+             Proficent,
+             Expert
+        }
+
         [Key]
         public int EmployeeSkillID { get; set; }
         [Required(ErrorMessage = "Please enter employee id")]
@@ -21,12 +28,11 @@ namespace WSSystem.DAL.Entities
         public int SkillID { get; set; }
 
         [Required(ErrorMessage="Please enter level of employee skills")]
-        public int Level { get; set; }
+        public SkillLevel Level { get; set; }
         public int? YearsOfExperience { get; set;}
 
-
         public virtual Employee Employee { get; set; }
-        public virtual Skill Skill { get; set; }
+        public virtual Skill Skill { get; set; }           
 
     }
 }

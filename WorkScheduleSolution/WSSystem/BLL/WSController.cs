@@ -72,6 +72,28 @@ namespace WSSystem.BLL
 
         #endregion
 
+        #region EmployeeSkill Report
 
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<DAL.Entities.POCOs.EmployeeSkillDirectory> GetEmployeeBySkill()
+        {
+            using (WorkSchedule context = new WorkSchedule())
+            {
+                var results = from cat in context.EmployeeSkills
+                              
+                              select new DAL.Entities.POCOs.EmployeeSkillDirectory
+                              {
+                                   Skill = cat.Skill.Description,
+                                   Name = cat.Employee.FirstName + "," + cat.Employee.LastName,
+                                   Phone = cat.Employee.HomePhone,
+                                   Level = cat.Level.ToString(),
+                                   YOE = cat.YearsOfExperience
+                              };
+
+                return results.ToList(); // this is similar to .Dump() in Linqpad
+            }
+        }
+
+        #endregion
     }
 }

@@ -12,15 +12,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WSSystem.DAL.Entities.POCOs
 {
-    public class LocationDetails
+    public class EmployeeSkillDirectory
     {
        
+        public string Skill { get; set; }
         public string Name { get; set; }
-        public string Street { get; set; }
-        public string City { get; set; }
-        public string Province { get; set; }
-        public string Contact { get; set; }
         public string Phone { get; set; }
-        public bool Active { get; set; }
+        public string Level { get; set; }
+        public int? YOE { get; set; }
+        
     }
 }
