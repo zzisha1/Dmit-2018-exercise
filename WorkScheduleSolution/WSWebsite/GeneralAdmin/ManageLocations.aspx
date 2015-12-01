@@ -4,9 +4,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <h1>Manage Locations</h1>
     <uc1:MessageUserControl ID="MessageUserControl" runat="server" />
-    <asp:ListView ID="LocationListView" runat="server" DataSourceID="LocationODS" InsertItemPosition="LastItem" DataKeyNames="LocationID">
+    <asp:ListView ID="LocationListView" runat="server" DataSourceID="LocationODS" InsertItemPosition="FirstItem" DataKeyNames="LocationID">
+        
         <AlternatingItemTemplate>
-            <tr style="background-color:#FAFAD2; color: #284775;">
+           
+             <tr style="background-color:#FAFAD2; color: #284775;">
+                
                 <td>
                     <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
                 </td>
@@ -82,8 +85,8 @@
         <InsertItemTemplate>
             <tr style="">
                 <td>
-                    <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insert" />
-                    <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Clear" />
+                    <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Add" />
+                    
                 </td>
                 
                 
@@ -152,9 +155,9 @@
                     <td runat="server">
                         <table id="itemPlaceholderContainer" runat="server" border="1" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
                             <tr runat="server" style="background-color:#FFFBD6; color: #333333;">
-                                <th runat="server"></th>
+                                <th runat="server">Action</th>
                                
-                               
+                                
                                 <th runat="server">Name</th>
                                 <th runat="server">Street</th>
                                 <th runat="server">City</th>

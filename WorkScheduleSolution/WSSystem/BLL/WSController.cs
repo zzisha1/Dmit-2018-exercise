@@ -17,7 +17,7 @@ namespace WSSystem.BLL
     [DataObject]
     public class WSController
     {
-        #region ListView for CRUD
+        #region ListView for Queries
 
         [DataObjectMethod(DataObjectMethodType.Select, false)]
          public List<Location> Location_List()

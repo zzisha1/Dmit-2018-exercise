@@ -15,14 +15,16 @@ namespace WSSystem.DAL.Entities
         [Key]
         public int EmployeeID { get; set; }
 
-        [Required(AllowEmptyStrings = false), StringLength(50)]
+        [Required(ErrorMessage = "Firt name is required")]
+        [StringLength(50,ErrorMessage = "First name must be within 50 characters long")]
         public string FirstName { get; set; }
 
-        [Required(AllowEmptyStrings = false), StringLength(50)]
+        [Required(ErrorMessage="Last name is required")]
+        [StringLength(50,ErrorMessage="Last name must be within 50 characters long")]
         public string LastName { get; set; }
 
         [Required(ErrorMessage = "Phone Number is required")]
-        [RegularExpression(@"^[1-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9][0-9]")]
+        [RegularExpression(@"^[1-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9][0-9]", ErrorMessage="Phone number format is XXX.XXX.XXXX example-780.444.1212")]
 
         public string HomePhone { get; set; }
       

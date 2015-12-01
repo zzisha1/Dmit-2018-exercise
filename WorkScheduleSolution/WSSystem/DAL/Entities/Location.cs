@@ -17,12 +17,12 @@ namespace WSSystem.DAL.Entities
         [Key]
         public int LocationID { get; set; }
 
-        [Required(AllowEmptyStrings = false), StringLength(50)]
+        [StringLength(50, ErrorMessage = " Name must be within 50 characters long")]
         public string Name { get; set; }
 
-        [Required(AllowEmptyStrings = false), StringLength(50)]
+         [StringLength(50, ErrorMessage = "Street must be within 50 characters long")]
         public string Street { get; set; }
-        [Required(AllowEmptyStrings = false), StringLength(30)]
+       [StringLength(50, ErrorMessage = "City must be within 30 characters long")]
         public string City { get; set; }
 
         [Required(ErrorMessage="Please enter Province")]
@@ -32,9 +32,9 @@ namespace WSSystem.DAL.Entities
         [StringLength(50, ErrorMessage="Contact must be within 50 characters")]
         public string Contact { get; set; }
 
-        [Required(ErrorMessage="Please enter phone number")]
-   
-        [RegularExpression(@"^[1-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9][0-9]")]
+        [Required(ErrorMessage="Phone number is required")]
+
+        [RegularExpression(@"^[1-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9][0-9]", ErrorMessage = "Phone number format is XXX.XXX.XXXX Example-780.444.1212")]
 
         public string Phone { get; set; }
         public bool Active { get; set; }
