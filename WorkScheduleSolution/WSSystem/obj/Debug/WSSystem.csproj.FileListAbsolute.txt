@@ -14,6 +14,5 @@ C:\Users\zzisha1\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSyst
 C:\Users\zzisha1\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\zzisha1\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\EntityFramework.xml
 C:\Users\zzisha1\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\zzisha1\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.csprojResolveAssemblyReference.cache
 C:\Users\zzisha1\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.dll
 C:\Users\zzisha1\Documents\GitHub\Dmit-2018-exercise\WorkScheduleSolution\WSSystem\obj\Debug\WSSystem.pdb

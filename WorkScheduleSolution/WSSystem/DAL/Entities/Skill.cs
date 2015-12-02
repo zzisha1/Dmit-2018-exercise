@@ -16,7 +16,8 @@ namespace WSSystem.DAL.Entities
         public int SkillID { get; set; }
 
        
-        [Required(AllowEmptyStrings=false), StringLength(100)]
+        [Required(ErrorMessage="Description is required")]
+        [StringLength(100,ErrorMessage="Description must be within 100 characters long")]
         public string Description { get; set; }
 
         [Required(ErrorMessage="Please choose required ticket on or off")]

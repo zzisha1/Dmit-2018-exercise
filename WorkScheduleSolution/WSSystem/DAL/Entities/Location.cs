@@ -17,15 +17,19 @@ namespace WSSystem.DAL.Entities
         [Key]
         public int LocationID { get; set; }
 
+        [Required(ErrorMessage="Name is required")]
         [StringLength(50, ErrorMessage = " Name must be within 50 characters long")]
         public string Name { get; set; }
 
-         [StringLength(50, ErrorMessage = "Street must be within 50 characters long")]
+        [Required(ErrorMessage = "Street name is required")]
+        [StringLength(50, ErrorMessage = "Street must be within 50 characters long")]
         public string Street { get; set; }
-       [StringLength(50, ErrorMessage = "City must be within 30 characters long")]
+      
+        [Required(ErrorMessage="City name is required")]
+        [StringLength(30, ErrorMessage = "City must be within 30 characters long")]
         public string City { get; set; }
 
-        [Required(ErrorMessage="Please enter Province")]
+        [Required(ErrorMessage="Province name is required")]
         [StringLength(2, ErrorMessage="Province must be 2 characters long")]
         public string Province { get; set; }
 
